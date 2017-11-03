@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds-Catalog</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="logo">
+			<a href="main.html">
+				<img src="#" alt="Nerds">
+			</a>
+		</div>
+		<nav>
+			<ul class="main-navigation">
+				<li>
+					<a href="index.html">Студия</a>
+				</li>
+				<li>
+					<a href="#">Клиенты</a>
+				</li>
+				<li class="current">
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="cart">
+			<a href="">Корзина</a>
+		</div>
+		<h1>Магазин готовых шаблонов</h1>		
+	</header>
+	
+	<main class="container">
+		<div class="catalog-columns">
+			<div class="column-left">
+				<form action="/echo" method="post">
+					<h3>Стоимость:</h3>
+					<input type="range" id="price-range" min="0" max="15000" value="8000">
+					<label for="price-range-min">От</label>
+					<input type="text" name="min-price" id="price-range-min" value="0">
+					<label for="price-range-max">До</label>
+					<input type="text" name="max-price" id="price-range-max" value="15000">			
+				
+					<h3>Сетка:</h3>
+					<input type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
+					<label for="adaptive-grid">Адаптивная</label>
+					<input type="radio" name="grid-form" id="fixed-grid" value="Фиксированная">
+					<label for="adaptive-grid">Фиксированная</label>
+					<input type="radio" name="grid-form" id="responsive-grid" value="Резиновая">
+					<label for="responsive-grid">Резиновая</label>
+
+					<h3>Особенности:</h3>
+					<input type="checkbox" name="slider" id="slider" checked>
+					<label for="slider">Слайдер</label>
+					<input type="checkbox" name="features-block" id="features-block">
+					<label for="slider">Блок преимуществ</label>
+					<input type="checkbox" name="news" id="news" checked>
+					<label for="news">Новости</label>
+					<input type="checkbox" name="gallery" id="gallery">
+					<label for="slider">Галерея</label>
+					<input type="checkbox" name="cart" id="cart">
+					<label for="slider">Корзина</label>
+					<input type="submit" value="Показать">
+				</form>
+			</div>
+			<div class="column-right">
+				<div class="sort">Сортировать:
+					<a class="current" href="#">По цене</a>
+					<a href="#">По типу</a>
+					<a href="#">По названию</a>
+					<a class="triangle-up current" href="#"></a>
+					<a class="triangle-down" href="#"></a>
+				</div>
+				<div class="catalog-items">
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>Sedona</h4>
+							<p class="item-content-text">Информационный сайт для туристов</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>Pink App</h4>
+							<p class="item-content-text">Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>Barbershop</h4>
+							<p class="item-content-text">Сайт салоны красоты. Для мужчин, да.</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>Mishka</h4>
+							<p class="item-content-text">Интернет-магазин вязаных игрушек</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>A Plus</h4>
+							<p class="item-content-text">Лендинг курсов повышения квалификации</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+					<a class="catalog-item" href="#">
+						<div class="item-image">
+							<img src="#" alt="">
+						</div>
+						<div class="item-content">
+							<h4>КВАСТ</h4>
+							<p class="item-content-text">Промо-сайт производителя крафтового кваса</p>
+							<a class="btn" href="#">9 900руб.</a>
+						</div>
+					</a>
+				</div>
+				<ul class="pagination-list">
+					<li class="pagination-item">1</li>
+					<li class="pagination-item">2</li>
+					<li class="pagination-item">3</li>
+					<li class="pagination-item-next">Следующая</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="contacts">
+			<div class="map"></div>
+			<div class="contacts-left">
+				<h4>NЁRDS DESIGN STUDIO</h4>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn" href="#">Напишите нам</a>
+				<div class="contacts-left-form">
+					<form class="left-form" action="https://echo.htmlacademy.ru" method="post">Напишите нам
+						<div class="name">
+							<label for="form-name">Ваше имя:</label>
+							<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="email">
+							<label for="form-email">Ваш e-mail:</label>
+							<input type="text" name="email" id="form-email" placeholder="Для отправки ответа">	
+						</div>
+						<div class="text">
+							<label for="form-text">Текст письма:</label>
+							<textarea name="text" id="form-text" rows="5">В свободной форме</textarea>
+						</div>
+						<input type="submit" value="Отправить">
+					</form>
+				</div>
+			</div>
+			<div class="contacts-right">
+				<img src="#" alt="map-marker">
+			</div>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<ul class="footer-social-media">
+			<li>
+				<a class="vk-icon" href="#">Вконтакте</a>
+			</li>
+			<li>
+				<a class="fb-icon" href="#">Facebook</a>
+			</li>
+			<li>
+				<a class="insta-icon" href="#">Instagram</a>
+			</li>	
+		</ul>
+		<div class="footer-content">
+			<p>Давайте дружить, это выгодно!</p>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
