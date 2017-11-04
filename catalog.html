@@ -39,11 +39,13 @@
 				<form action="/echo" method="post">
 					<h3>Стоимость:</h3>
 					<input type="range" id="price-range" min="0" max="15000" value="8000">
-					<label for="price-range-min">От</label>
-					<input type="text" name="min-price" id="price-range-min" value="0">
-					<label for="price-range-max">До</label>
-					<input type="text" name="max-price" id="price-range-max" value="15000">			
-				
+					<div class="price-range-form">
+						<label for="price-range-min">От</label>
+						<input type="text" name="min-price" id="price-range-min" value="0">
+						<label for="price-range-max">До</label>
+						<input type="text" name="max-price" id="price-range-max" value="15000">
+					</div>
+								
 					<h3>Сетка:</h3>
 					<input type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
 					<label for="adaptive-grid">Адаптивная</label>
@@ -67,10 +69,11 @@
 				</form>
 			</div>
 			<div class="column-right">
-				<div class="sort">Сортировать:
-					<a class="current" href="#">По цене</a>
-					<a href="#">По типу</a>
-					<a href="#">По названию</a>
+				<div class="sort">
+					<span>Сортировать:</span>
+					<a class="sort-current" href="#">По цене</a>
+					<a class="sort-type" href="#">По типу</a>
+					<a class="sort-name" href="#">По названию</a>
 					<a class="triangle-up current" href="#"></a>
 					<a class="triangle-down" href="#"></a>
 				</div>
@@ -82,7 +85,7 @@
 						<div class="item-content">
 							<h4>Sedona</h4>
 							<p class="item-content-text">Информационный сайт для туристов</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -92,7 +95,7 @@
 						<div class="item-content">
 							<h4>Pink App</h4>
 							<p class="item-content-text">Продуктовый лендинг приложения для iOS и Android</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -102,7 +105,7 @@
 						<div class="item-content">
 							<h4>Barbershop</h4>
 							<p class="item-content-text">Сайт салоны красоты. Для мужчин, да.</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -112,7 +115,7 @@
 						<div class="item-content">
 							<h4>Mishka</h4>
 							<p class="item-content-text">Интернет-магазин вязаных игрушек</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -122,7 +125,7 @@
 						<div class="item-content">
 							<h4>A Plus</h4>
 							<p class="item-content-text">Лендинг курсов повышения квалификации</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -132,7 +135,7 @@
 						<div class="item-content">
 							<h4>КВАСТ</h4>
 							<p class="item-content-text">Промо-сайт производителя крафтового кваса</p>
-							<a class="btn" href="#">9 900руб.</a>
+							<div class="btn">9 900руб.</div>
 						</div>
 					</a>
 				</div>
