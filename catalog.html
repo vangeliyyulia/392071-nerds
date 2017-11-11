@@ -40,11 +40,11 @@
 					<fieldset>
 						<legend>Стоимость:</legend>
 						<div class="price-range-form">
+							<input type="range" id="price-range" min="0" max="15000" value="8000">
 							<label for="price-range-min">От</label>
 							<input type="text" name="min-price" id="price-range-min" value="0">
 							<label for="price-range-max">До</label>
 							<input type="text" name="max-price" id="price-range-max" value="15000">
-							<input type="range" id="price-range" min="0" max="15000" value="8000">
 						</div>
 					</fieldset>
 					<fieldset>
@@ -68,8 +68,8 @@
 						<label for="gallery">Галерея</label>
 						<input type="checkbox" name="cart" id="cart">
 						<label for="cart">Корзина</label>
-						<input type="submit" value="Показать">
 					</fieldset>
+					<button type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="column-right">
@@ -84,6 +84,7 @@
 					</div>
 				</div>
 				<div class="catalog-items">
+					<h2 class="visually-hidden">Примеры работ</h2>
 					<a class="catalog-item" href="#">
 						<div class="item-image">
 							<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -155,6 +156,7 @@
 		</div>
 		
 		<div class="contacts">
+			<h2 class="visually-hidden">Контакты</h2>
 			<div class="map">
 				<img src="img/map.png" width="1440" height="416" alt="Карта">
 			</div>
@@ -163,23 +165,6 @@
 				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				<p>тел. +7 (812) 275-75-75</p>
 				<a class="btn" href="#">Напишите нам</a>
-				<div class="contacts-left-form">
-					<form class="left-form" action="https://echo.htmlacademy.ru" method="post">Напишите нам
-						<div class="name">
-							<label for="form-name">Ваше имя:</label>
-							<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
-						</div>
-						<div class="email">
-							<label for="form-email">Ваш e-mail:</label>
-							<input type="text" name="email" id="form-email" placeholder="Для отправки ответа">	
-						</div>
-						<div class="text">
-							<label for="form-text">Текст письма:</label>
-							<textarea name="text" id="form-text" rows="5">В свободной форме</textarea>
-						</div>
-						<input type="submit" value="Отправить">
-					</form>
-				</div>
 			</div>
 			<div class="contacts-right">
 				<img src="img/map-marker.png" width="231" height="190" alt="map-marker">
@@ -211,5 +196,24 @@
 		</div>
 	</footer>
 
+	<section class="modal modal-form">
+		<h2 class="visually-hidden">Форма отправки сообщения</h2>
+		<form class="left-form" action="https://echo.htmlacademy.ru" method="post">Напишите нам
+			<div class="name">
+				<label for="form-name">Ваше имя:</label>
+				<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
+			</div>
+			<div class="email">
+				<label for="form-email">Ваш e-mail:</label>
+				<input type="text" name="email" id="form-email" placeholder="Для отправки ответа">	
+			</div>
+			<div class="text">
+				<label for="form-text">Текст письма:</label>
+				<textarea name="text" id="form-text" rows="5">В свободной форме</textarea>
+			</div>
+			<button type="submit">Отправить</button>
+			<span class="modal-close">x</span>
+		</form>
+	</section>
 </body>
 </html>
