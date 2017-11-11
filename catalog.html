@@ -28,7 +28,7 @@
 			</ul>
 		</nav>
 		<div class="cart">
-			<a href="">Корзина</a>
+			<a class="cart-link" href="cart.html">Корзина</a>
 		</div>
 		<h1>Магазин готовых шаблонов</h1>		
 	</header>
@@ -36,36 +36,40 @@
 	<main class="container">
 		<div class="catalog-columns">
 			<div class="column-left">
-				<form action="/echo" method="post">
-					<h3>Стоимость:</h3>
-					<input type="range" id="price-range" min="0" max="15000" value="8000">
-					<div class="price-range-form">
-						<label for="price-range-min">От</label>
-						<input type="text" name="min-price" id="price-range-min" value="0">
-						<label for="price-range-max">До</label>
-						<input type="text" name="max-price" id="price-range-max" value="15000">
-					</div>
-								
-					<h3>Сетка:</h3>
-					<input type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
-					<label for="adaptive-grid">Адаптивная</label>
-					<input type="radio" name="grid-form" id="fixed-grid" value="Фиксированная">
-					<label for="adaptive-grid">Фиксированная</label>
-					<input type="radio" name="grid-form" id="responsive-grid" value="Резиновая">
-					<label for="responsive-grid">Резиновая</label>
-
-					<h3>Особенности:</h3>
-					<input type="checkbox" name="slider" id="slider" checked>
-					<label for="slider">Слайдер</label>
-					<input type="checkbox" name="features-block" id="features-block">
-					<label for="slider">Блок преимуществ</label>
-					<input type="checkbox" name="news" id="news" checked>
-					<label for="news">Новости</label>
-					<input type="checkbox" name="gallery" id="gallery">
-					<label for="slider">Галерея</label>
-					<input type="checkbox" name="cart" id="cart">
-					<label for="slider">Корзина</label>
-					<input type="submit" value="Показать">
+				<form action="/echo" method="get">
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<div class="price-range-form">
+							<label for="price-range-min">От</label>
+							<input type="text" name="min-price" id="price-range-min" value="0">
+							<label for="price-range-max">До</label>
+							<input type="text" name="max-price" id="price-range-max" value="15000">
+							<input type="range" id="price-range" min="0" max="15000" value="8000">
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<input type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
+						<label for="adaptive-grid">Адаптивная</label>
+						<input type="radio" name="grid-form" id="fixed-grid" value="Фиксированная">
+						<label for="adaptive-grid">Фиксированная</label>
+						<input type="radio" name="grid-form" id="responsive-grid" value="Резиновая">
+						<label for="responsive-grid">Резиновая</label>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<input type="checkbox" name="slider" id="slider" checked>
+						<label for="slider">Слайдер</label>
+						<input type="checkbox" name="features-block" id="features-block">
+						<label for="features-block">Блок преимуществ</label>
+						<input type="checkbox" name="news" id="news" checked>
+						<label for="news">Новости</label>
+						<input type="checkbox" name="gallery" id="gallery">
+						<label for="gallery">Галерея</label>
+						<input type="checkbox" name="cart" id="cart">
+						<label for="cart">Корзина</label>
+						<input type="submit" value="Показать">
+					</fieldset>
 				</form>
 			</div>
 			<div class="column-right">
@@ -186,16 +190,19 @@
 	<footer class="main-footer">
 		<ul class="footer-social-media">
 			<li>
-				<img src="img/circle.png" width="79" height="79">
-				<a class="vk-icon" href="#">Вконтакте</a>
+				<a class="vk-icon" href="#">
+					<p class="visually-hidden">Вконтакте</p>
+				</a>
 			</li>
 			<li>
-				<img src="img/circle.png" width="79" height="79">
-				<a class="fb-icon" href="#">Facebook</a>
+				<a class="fb-icon" href="#">
+					<p class="visually-hidden">Facebook</p>
+				</a>
 			</li>
 			<li>
-				<img src="img/circle.png" width="79" height="79">
-				<a class="insta-icon" href="#">Instagram</a>
+				<a class="insta-icon" href="#">
+					<p class="visually-hidden">Instagram</p>
+				</a>
 			</li>	
 		</ul>
 		<div class="footer-content">
