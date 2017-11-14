@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds-index</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<div class="logo">
-			<a href="#">
+			<a href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
 			</a>
 		</div>
-		<nav>
-			<ul class="main-navigation">
+		<nav class="main-navigation">
+			<ul class="user-navigation">
 				<li>
 					<a href="#">Студия</a>
 				</li>
@@ -72,24 +75,24 @@
 				<img class="feature-image" src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
 				<h3>Веб-сайты</h3>
 				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<a class="feature-btn" href="#">Заказать</a>
+				<a class="feature-btn red" href="#">Заказать</a>
 			</div>
 			<div class="feature-item">
 				<img class="feature-image" src="img/illustration-2.png" width="300" height="146" alt="Приложения">
 				<h3>Приложения</h3>
 				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a class="feature-btn" href="#">Заказать</a>
+				<a class="feature-btn green" href="#">Заказать</a>
 			</div>
 			<div class="feature-item">
 				<img class="feature-image" src="img/illustration-3.png" width="300" height="146" alt="Презентации">
 				<h3>Презентации</h3>
 				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				<a class="feature-btn" href="#">Заказать</a>
+				<a class="feature-btn yellow" href="#">Заказать</a>
 			</div>
 		</section>
 		<section class="content">
 			<div class="content-left">
-				<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+				<h1 class="content-left-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 				<p class="content-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<p class="content-left-list-title">Выполняем заказы на разработку:</p>
 				<ul class="content-left-list">
@@ -105,16 +108,16 @@
 				<p class="content-right-subtitle">с 2004 года Любим точность во всем:</p>
 				<ul class="content-right-list">
 					<li>
-						<b>146<span class="percent">%</span></b>
-						<span>Уровень самоотдачи</span>
+						<b>146<sup>%</sup></b>
+						<span class="content-right-text">Уровень самоотдачи</span>
 					</li>
 					<li>
-						<b>100<span class="percent">%</span></b>
-						<span>Соблюдение сроков</span>
+						<b>100<sup>%</sup></b>
+						<span class="content-right-text">Соблюдение сроков</span>
 					</li>
 					<li>
-						<b>50<span class="percent">%</span></b>
-						<span>Минимальная предоплата</span>
+						<b>50<sup>%</sup></b>
+						<span class="content-right-text">Минимальная предоплата</span>
 					</li>
 				</ul>
 			</div>
@@ -155,45 +158,49 @@
 	<footer class="main-footer">
 		<ul class="footer-social-media">
 			<li>
+				<div class="circle"></div>
 				<a class="vk-icon" href="#">
 					<span class="visually-hidden">Вконтакте</span>
 				</a>
 			</li>
 			<li>
+				<div class="circle"></div>
 				<a class="fb-icon" href="#">
 					<span class="visually-hidden">Facebook</span>
 				</a>
 			</li>
 			<li>
+				<div class="circle"></div>
 				<a class="insta-icon" href="#">
 					<span class="visually-hidden">Instagram</span>
 				</a>
 			</li>	
 		</ul>
 		<div class="footer-content">
-			<p>Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="footer-content-title">Давайте дружить, это выгодно!</p>
+			<p class="footer-content-text">Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
 
 	<section class="modal modal-form">
 		<h2 class="visually-hidden">Форма отправки сообщения</h2>
-		<form class="left-form" action="https://echo.htmlacademy.ru" method="post">Напишите нам
-			<div class="name">
+		<form class="left-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="form-title">Напишите нам</p>
+			<div class="left-form-item">
 				<label for="form-name">Ваше имя:</label>
 				<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
 			</div>
-			<div class="email">
+			<div class="left-form-item">
 				<label for="form-email">Ваш e-mail:</label>
 				<input type="text" name="email" id="form-email" placeholder="Для отправки ответа">	
 			</div>
-			<div class="text">
+			<div class="left-form-item">
 				<label for="form-text">Текст письма:</label>
 				<textarea name="text" id="form-text" rows="5">В свободной форме</textarea>
 			</div>
 			<button type="submit">Отправить</button>
 		</form>
-		<button class="modal-close">x</button>
+		<button class="modal-close">Закрыть</button>
 	</section>
 </body>
 </html>
