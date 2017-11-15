@@ -329,11 +329,23 @@ label {
 	text-align: center;
 }
 
+.column-left-form fieldset {
+	border: none;
+}
+
 .column-left-form-title {
 	font-size: 18px;
 	line-height: 1.666;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.price-range-min-title,
+.price-range-max-title,
+.column-left-form input[type="text"] {
+	font-weight: 400;
+	line-height: 1.375;
+	color: #283136;
 }
 
 .sort-title {
@@ -343,18 +355,114 @@ label {
 	font-weight: bold;	
 }
 
-.column-left-form label {
+.column-left-form-label {
 	color: #283136;
 	font-weight: 400;
+	line-height: 1.25;
 }
 
-.sort-links a {
+.column-left-form-input:hover + label {
+	color: #000000;
+}
+
+.column-left-form-input:disabled + label {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.column-left-form-button {
+	background-color: #eeeeee;
+	font-weight: 500;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: #000000;
+	border: none;
+}
+
+.column-left-form-button:hover {
+	background-color: #dfdfdf;
+}
+
+.column-left-form-button:focus,
+.column-left-form-button:active {
+	outline: none;
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+.sort-link {
 	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.285;
 	text-transform: uppercase;
 	color: #000000;
 }
 
-.sort-link-opacity a {
+.sort-link:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-link:focus,
+.sort-link:active {
+	outline: none;
 	color: rgba(0, 0, 0, 0.3);
 }
 
+h4 {
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.item-content-text {
+	font-weight: 400;
+	line-height: 1.1;
+	color: #666666;
+}
+
+.item-content-button {
+	font-weight: 500;
+	line-height: 1.1;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	color: #ffffff;
+	border: none;
+}
+
+.item-content-button:hover {
+	background-color: #e74246;
+}
+
+.item-content-button:focus,
+.item-content-button:active {
+	outline: none;
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 #c13135;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item  a {
+	background-color: #eeeeee;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #000000;
+}
+
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:focus {
+	background-color: #ffffff;
+	border: 3px solid #dbdbdb;
+	outline: none;
+}
+
+.pagination-item a:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
+}

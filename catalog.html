@@ -52,27 +52,27 @@
 					</fieldset>
 					<fieldset>
 						<legend class="column-left-form-title">Сетка:</legend>
-						<input type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
-						<label for="adaptive-grid">Адаптивная</label>
-						<input type="radio" name="grid-form" id="fixed-grid" value="Фиксированная">
-						<label for="adaptive-grid">Фиксированная</label>
-						<input type="radio" name="grid-form" id="responsive-grid" value="Резиновая">
-						<label for="responsive-grid">Резиновая</label>
+						<input class="column-left-form-input" type="radio" name="grid-form" id="adaptive-grid" value="Адаптивная" checked>
+						<label class="column-left-form-label" for="adaptive-grid">Адаптивная</label>
+						<input class="column-left-form-input" type="radio" name="grid-form" id="fixed-grid" value="Фиксированная">
+						<label class="column-left-form-label" for="fixed-grid">Фиксированная</label>
+						<input class="column-left-form-input" type="radio" name="grid-form" id="responsive-grid" value="Резиновая">
+						<label class="column-left-form-label" for="responsive-grid">Резиновая</label>
 					</fieldset>
 					<fieldset>
 						<legend class="column-left-form-title">Особенности:</legend>
-						<input type="checkbox" name="slider" id="slider" checked>
-						<label for="slider">Слайдер</label>
-						<input type="checkbox" name="features-block" id="features-block">
-						<label for="features-block">Блок преимуществ</label>
-						<input type="checkbox" name="news" id="news" checked>
-						<label for="news">Новости</label>
-						<input type="checkbox" name="gallery" id="gallery">
-						<label for="gallery">Галерея</label>
-						<input type="checkbox" name="cart" id="cart">
-						<label for="cart">Корзина</label>
+						<input class="column-left-form-input" type="checkbox" name="slider" id="slider" checked>
+						<label class="column-left-form-label" for="slider">Слайдер</label>
+						<input class="column-left-form-input" type="checkbox" name="features-block" id="features-block">
+						<label class="column-left-form-label" for="features-block">Блок преимуществ</label>
+						<input class="column-left-form-input" type="checkbox" name="news" id="news" checked>
+						<label class="column-left-form-label" for="news">Новости</label>
+						<input class="column-left-form-input" type="checkbox" name="gallery" id="gallery">
+						<label class="column-left-form-label" for="gallery">Галерея</label>
+						<input class="column-left-form-input" type="checkbox" name="cart" id="cart">
+						<label class="column-left-form-label" for="cart">Корзина</label>
 					</fieldset>
-					<button type="submit">Показать</button>
+					<button class="column-left-form-button" type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="column-right">
@@ -80,11 +80,8 @@
 					<span class="sort-title">Сортировать:</span>
 					<div class="sort-links">
 						<a class="sort-link" href="#">По цене</a>
-						<div class="sort-link-opacity">
-							<a class="sort-link" href="#">По типу</a>
-							<a class="sort-link" href="#">По названию</a>							
-						</div>
-
+						<a class="sort-link" href="#">По типу</a>
+						<a class="sort-link" href="#">По названию</a>							
 						<a class="triangle-up current" href="#"></a>
 						<a class="triangle-down" href="#"></a>
 					</div>
@@ -98,7 +95,7 @@
 						<div class="item-content">
 							<h4>Sedona</h4>
 							<p class="item-content-text">Информационный сайт для туристов</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -108,7 +105,7 @@
 						<div class="item-content">
 							<h4>Pink App</h4>
 							<p class="item-content-text">Продуктовый лендинг приложения для iOS и Android</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -118,7 +115,7 @@
 						<div class="item-content">
 							<h4>Barbershop</h4>
 							<p class="item-content-text">Сайт салоны красоты. Для мужчин, да.</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -128,7 +125,7 @@
 						<div class="item-content">
 							<h4>Mishka</h4>
 							<p class="item-content-text">Интернет-магазин вязаных игрушек</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -138,7 +135,7 @@
 						<div class="item-content">
 							<h4>A Plus</h4>
 							<p class="item-content-text">Лендинг курсов повышения квалификации</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 					<a class="catalog-item" href="#">
@@ -148,15 +145,15 @@
 						<div class="item-content">
 							<h4>КВАСТ</h4>
 							<p class="item-content-text">Промо-сайт производителя крафтового кваса</p>
-							<div class="btn">9 900руб.</div>
+							<button class="item-content-button">9 900руб.</button>
 						</div>
 					</a>
 				</div>
 				<ul class="pagination-list">
-					<li class="pagination-item">1</li>
-					<li class="pagination-item">2</li>
-					<li class="pagination-item">3</li>
-					<li class="pagination-item-next">Следующая</li>
+					<li class="pagination-item"><a href="#">1</a></li>
+					<li class="pagination-item"><a href="#">2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">Следующая</a></li>
 				</ul>
 			</div>
 		</div>
@@ -197,29 +194,30 @@
 			</li>	
 		</ul>
 		<div class="footer-content">
-			<p>Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="footer-content-title">Давайте дружить, это выгодно!</p>
+			<p class="footer-content-text">Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
 
 	<section class="modal modal-form">
 		<h2 class="visually-hidden">Форма отправки сообщения</h2>
-		<form class="left-form" action="https://echo.htmlacademy.ru" method="post">Напишите нам
-			<div class="name">
+		<form class="left-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="form-title">Напишите нам</p>
+			<div class="left-form-item">
 				<label for="form-name">Ваше имя:</label>
 				<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
 			</div>
-			<div class="email">
+			<div class="left-form-item">
 				<label for="form-email">Ваш e-mail:</label>
 				<input type="text" name="email" id="form-email" placeholder="Для отправки ответа">	
 			</div>
-			<div class="text">
+			<div class="left-form-item">
 				<label for="form-text">Текст письма:</label>
 				<textarea name="text" id="form-text" rows="5">В свободной форме</textarea>
 			</div>
-			<button type="submit">Отправить</button>
-			<button class="modal-close">Закрыть</button>
+			<button class="modal-sent" type="submit">Отправить</button>
 		</form>
+		<button class="modal-close">Закрыть</button>
 	</section>
 </body>
 </html>
