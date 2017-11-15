@@ -72,8 +72,7 @@ h2 {
 
 .slider-item p, 
 .feature-item p, 
-.content-left-text,
-.content-right-text {
+.content-left-text {
 	font-size: 16px;
 	font-weight: 400; 
 	color: #283136;
@@ -104,7 +103,8 @@ h3 {
 }
 
 .feature-btn {
-	font: inherit;
+	font-weight: 500;
+	line-height: 1.125;
 	text-align: center;
 	vertical-align: middle;
 	color: #ffffff;
@@ -196,6 +196,12 @@ h4 {
 	line-height: 1.666;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.content-right-text {
+	font-weight: 400;
+	line-height: 1.125;
+	color: #283136;
 }
 
 .contacts-left p {
@@ -313,19 +319,28 @@ label {
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0 0 #c13135;
 } 
+
 /* catalog.html */
 
 .catalog-title {
 	font-size: 55px;
+	line-height: 1;
 	font-weight: 500;
 	text-align: center;
 }
 
-.column-left-form-title,
-.sort-title {
+.column-left-form-title {
 	font-size: 18px;
+	line-height: 1.666;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.sort-title {
+	font-size: 18px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: bold;	
 }
 
 .column-left-form label {
