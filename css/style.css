@@ -19,6 +19,7 @@ a {
 
 .main-navigation {
 	font-size: 16px;
+	line-height: 1.875;
 	color: #000000;
 	background-color: #eeeeee;
 	text-transform: uppercase;
@@ -34,11 +35,14 @@ a {
 
 .cart {
 	text-transform: uppercase;
+
 }
 
 .user-navigation a,
 .cart a {
 	color: #000000;
+	font-size: 16px;
+	line-height: 1.875;
 }
 
 .user-navigation a:hover,
@@ -62,6 +66,7 @@ a {
 
 h2 {
 	font-size: 55px;
+	line-height: 1;
 	font-weight: 500;
 }
 
@@ -70,12 +75,13 @@ h2 {
 .content-left-text,
 .content-right-text {
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 400; 
 	color: #283136;
 }
 
 .slider-item a {
 	font-size: 16px;
+	line-height: 1.1;
 	color: #ffffff;
 	text-transform: uppercase;
 	background-color: #fb565a;
@@ -92,6 +98,7 @@ h2 {
 
 h3 {
 	font-size: 24px;
+	line-height: 1.25;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -144,6 +151,7 @@ h3 {
 
 .content-left-title {
 	font-size: 45px;
+	line-height: 1;
 	font-weight: 500;
 }
 
@@ -154,6 +162,7 @@ h3 {
 }
 
 .content-left-list {
+	font-weight: 400;
 	color: #283136;
 }
 
@@ -184,16 +193,20 @@ sup {
 
 h4 {
 	font-size: 18px;
+	line-height: 1.666;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .contacts-left p {
+	font-weight: 400;
+	line-height: 1.125;
 	color: #666666;
 }
 
 .contacts-left a {
-	font: inherit;
+	font-weight: 500;
+	line-height: 1.125;
 	text-align: center;
 	vertical-align: middle;
 	color: #ffffff;
@@ -211,10 +224,13 @@ h4 {
 } 
 .footer-content-title {
 	font-size: 36px;
+	line-height: 1;
 	font-weight: bold;
 }
 
 .footer-content-text {
+	font-weight: 400;
+	line-height: 1.375;
 	color: #444444;
 }
 
@@ -239,7 +255,8 @@ h4 {
 
 .left-form input[type="text"],
 .left-form textarea {
-	font: inherit;
+	font-weight: 400;
+	line-height: 1.125;
 	text-transform: none;
 	color: rgba(68, 68, 68, 0.5);
 	border: 2px solid #d7dcde;
@@ -264,15 +281,18 @@ h4 {
 
 .form-title {
 	font-size: 45px;
-	font-weight: bold;
+	line-height: 1;
+	font-weight: 500;
 }
 
 label {
+	line-height: 1.125;
 	font-weight: bold;
 }
 
 .modal-sent {
-	font: inherit;
+	font-weight: 500;
+	line-height: 1.125;
 	text-align: center;
 	vertical-align: middle;
 	color: #ffffff;
@@ -282,6 +302,11 @@ label {
 
 .modal-sent:hover {
 	background-color: #e74246;
+}
+
+.modal-sent:focus {
+	background-color: #e74246;
+	outline: none;
 }
 
 .modal-sent:active {
