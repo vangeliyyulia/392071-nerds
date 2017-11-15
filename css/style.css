@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	font-weight: 500;
 	color: #000;
 	background-color: #ffffff;
@@ -13,9 +13,12 @@ a {
 	text-decoration: none;
 }
 
+.main-header {
+	background-color: #eeeeee;
+}
+
 .main-navigation {
 	font-size: 16px;
-	line-height: 30px;
 	color: #000000;
 	background-color: #eeeeee;
 	text-transform: uppercase;
@@ -59,7 +62,7 @@ a {
 
 h2 {
 	font-size: 55px;
-	line-height: 55px;
+	font-weight: 500;
 }
 
 .slider-item p, 
@@ -67,6 +70,7 @@ h2 {
 .content-left-text,
 .content-right-text {
 	font-size: 16px;
+	font-weight: 400;
 	color: #283136;
 }
 
@@ -88,6 +92,7 @@ h2 {
 
 h3 {
 	font-size: 24px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -111,6 +116,7 @@ h3 {
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0 0 #c13135;
 } 
+
 .green {
 	background-color: #00ca74;
 }
@@ -138,6 +144,7 @@ h3 {
 
 .content-left-title {
 	font-size: 45px;
+	font-weight: 500;
 }
 
 .content-left-list-title {
@@ -177,6 +184,7 @@ sup {
 
 h4 {
 	font-size: 18px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -184,7 +192,7 @@ h4 {
 	color: #666666;
 }
 
-.btn {
+.contacts-left a {
 	font: inherit;
 	text-align: center;
 	vertical-align: middle;
@@ -193,6 +201,14 @@ h4 {
 	background-color: #fb565a;	
 }
 
+.contacts-left a:hover {
+	background-color: #e74246;
+}
+
+.contacts-left a:active {
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0 0 #c13135;
+} 
 .footer-content-title {
 	font-size: 36px;
 	font-weight: bold;
@@ -202,15 +218,23 @@ h4 {
 	color: #444444;
 }
 
-.circle {
+.footer-social-media a {
+	display: inline-block;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	background-color: #e1e1e1;
+	text-align: center;
 }
 
-.circle:hover {
+.footer-social-media a:hover {
 	background-color: #e74246;
+}
+
+.footer-social-media a:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0 0 #c13135;
 }
 
 .left-form input[type="text"],
@@ -229,6 +253,7 @@ h4 {
 .left-form input[type="text"]:focus,
 .left-form textarea:focus {
 	border: 2px solid #000000;
+	outline: none;
 }
 
 .left-form input[type="text"]:invalid,
@@ -248,12 +273,48 @@ label {
 
 .modal-sent {
 	font: inherit;
+	text-align: center;
+	vertical-align: middle;
 	color: #ffffff;
 	text-transform: uppercase;
+	background-color: #fb565a;
+}
+
+.modal-sent:hover {
 	background-color: #e74246;
 }
 
+.modal-sent:active {
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0 0 #c13135;
+} 
+/* catalog.html */
 
+.catalog-title {
+	font-size: 55px;
+	font-weight: 500;
+	text-align: center;
+}
 
+.column-left-form-title,
+.sort-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
+.column-left-form label {
+	color: #283136;
+	font-weight: 400;
+}
+
+.sort-links a {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort-link-opacity a {
+	color: rgba(0, 0, 0, 0.3);
+}
 
