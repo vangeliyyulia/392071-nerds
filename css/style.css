@@ -246,6 +246,13 @@ label {
 	font-weight: bold;
 }
 
+.modal-sent {
+	font: inherit;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #e74246;
+}
+
 
 
 
