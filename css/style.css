@@ -43,6 +43,7 @@ a {
 
 .main-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	font-size: 16px;
 	line-height: 1.875;
 	color: #000000;
@@ -60,6 +61,9 @@ a {
 
 .cart {
 	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100px;
 }
 
 .user-navigation a,
@@ -84,14 +88,13 @@ a {
 	height: 15px;
 	left: 0;
 	top: 7px;
-	background-image: url(../img/cart-icon.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	background: url(../img/cart-icon.svg) no-repeat 0 0 #eeeeee;
 }
 
 .user-navigation {
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 440px;
 	margin-right: 245px;
@@ -290,7 +293,8 @@ a {
 .features {
 	position: relative;
 	display: flex;
-	height: 348px;
+	flex-wrap: wrap;
+	min-height: 348px;
 	margin-bottom: 160px;
 }
 
@@ -449,6 +453,7 @@ h3 {
 
 .content-right-list {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 }
@@ -458,8 +463,8 @@ h3 {
 	width: 100px;
 }
 
-.content-right-list li:last-of-type(3n) {
-	margin-right: 16px;
+.content-right-list li:nth-of-type(3n) {
+	margin-right: 0px;
 } 
 
 .content-left-title {
@@ -511,6 +516,7 @@ sup {
 
 .partners-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 50px 0 0;
 	padding: 0 0 0 40px;
@@ -522,22 +528,23 @@ sup {
 
 .partners-logo2 {
 	width: 209px;
-	margin-top: -20px;
-	margin-left: -20px;
+	margin-top: -10px;
+	margin-left: -30px;
 }
 
 .partners-logo3 {
 	width: 185px;
-	margin-left: -10px;
+	margin-left: -20px;
 }
 
 .partners-logo4 {
 	width: 173px;
+	margin-top: -10px;
 }
 
 .partners-row {
 	position: relative;
-	margin-bottom: 110px;
+	margin-bottom: 115px;
 }
 
 .partners-row::before {
@@ -554,8 +561,37 @@ sup {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	transform: translateY(30px);
+	transform: translateY(35px);
 	background-color: #eeeeee;
+}
+
+.partners-item {
+	position: relative;
+}
+
+.partners-item:nth-of-type(1n)::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 52px;
+	top: 0px;
+	right: -50px;
+	background-color: #eeeeee;
+}
+
+.partners-item:nth-of-type(2)::after {
+	top: 20px;
+	right: -45px;
+}
+
+.partners-item:nth-of-type(3)::after {
+	top: 10px;
+	right: -60px;
+}
+
+.partners-item:last-of-type::after {
+	display: none;
 }
 
 .partners-list img {
@@ -748,13 +784,98 @@ h4 {
 	box-shadow: inset 0px 3px 0 0 #c13135;
 }
 
-.left-form input[type="text"],
+.modal-form {
+	width: 960px;
+	min-height: 590px;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0px;
+	left: 15%;
+	padding: 70px 100px 70px 90px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+	width: 21px;
+	height: 21px;
+	border: none;
+	font-size: 0px;
+	cursor: pointer;
+	position: absolute;
+	top: 80px;
+	right: 90px;
+	background-color: transparent;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 22px;
+	background-color: #fecccd;
+	top: 0;
+	left: 7px;
+	outline: none;
+}
+
+.modal-close:focus {
+	outline: none;
+}
+
+.modal-close:focus::before,
+.modal-close:focus::after {
+	background-color: #fb565a;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.left-form {
+	width: 760px;
+}
+
+.left-form-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.left-form-textarea {
+	flex-grow: 1;
+	width: 100%
+}
+
+.left-form-wrapper .left-form-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+
+.left-form input[type="text"] {
+	font-weight: 400;
+	line-height: 1.125;
+	text-transform: none;
+	color: rgba(68, 68, 68, 0.5);
+	border: 2px solid #d7dcde;
+	width: 360px;
+	padding: 15px;
+}
+
 .left-form textarea {
 	font-weight: 400;
 	line-height: 1.125;
 	text-transform: none;
 	color: rgba(68, 68, 68, 0.5);
 	border: 2px solid #d7dcde;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 
 .left-form input[type="text"]:hover,
@@ -778,11 +899,14 @@ h4 {
 	font-size: 45px;
 	line-height: 1;
 	font-weight: 500;
+	margin: 0;
+	margin-bottom: 40px;
 }
 
 .left-form-item label {
 	line-height: 1.125;
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .modal-sent {
@@ -793,6 +917,10 @@ h4 {
 	color: #ffffff;
 	text-transform: uppercase;
 	background-color: #fb565a;
+	border: none;
+	width: 260px;
+	padding: 17px 0;
+	border-radius: 3px;
 }
 
 .modal-sent:hover {
@@ -1240,12 +1368,6 @@ input[type="checkbox"] {
 
 .pagination-list {
 	margin-bottom: 55px;
-}
-
-/* сетка */
-
-.modal {
-	display: none;
 }
 
 /* range filter */
