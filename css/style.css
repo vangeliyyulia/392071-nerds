@@ -789,7 +789,7 @@ h4 {
 	min-height: 590px;
 	background-color: #ffffff;
 	position: fixed;
-	top: 0px;
+	top: 10px;
 	left: 15%;
 	padding: 70px 100px 70px 90px;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
