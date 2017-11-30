@@ -161,7 +161,7 @@ a {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100; 
+  z-index: 10; 
   width: 160px;
   height: 18px;
   text-align: center;
@@ -304,7 +304,7 @@ a {
 	width: 100%;
 	height: 2px;
 	left: 0;
-	bottom: -80px;
+	bottom: -85px;
 	background-color: #eeeeee;
 }
 
@@ -412,7 +412,7 @@ h3 {
 .content {
 	display: flex;
 	
-	margin-bottom: 120px;
+	margin-bottom: 110px;
 	margin-left: 10px;
 }
 
@@ -422,12 +422,12 @@ h3 {
 }
 
 .content-right-logo  {
-	margin-top: -30px;
+	margin-top: -35px;
 }
 
 .content-left-list li {
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 	padding-left: 40px;
 }
 
@@ -459,7 +459,7 @@ h3 {
 }
 
 .content-right-list li {
-	margin-right: 25px;
+	margin-right: 20px;
 	width: 100px;
 }
 
@@ -497,7 +497,7 @@ h3 {
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
-	margin: 20px 0 30px 20px;
+	margin: 30px 0 26px 15px;
 }
 
 figure {
@@ -528,7 +528,7 @@ sup {
 
 .partners-logo2 {
 	width: 209px;
-	margin-top: -10px;
+	margin-top: -20px;
 	margin-left: -30px;
 }
 
@@ -544,7 +544,7 @@ sup {
 
 .partners-row {
 	position: relative;
-	margin-bottom: 115px;
+	margin-bottom: 117px;
 }
 
 .partners-row::before {
@@ -552,7 +552,7 @@ sup {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	transform: translateY(-60px);
+	transform: translateY(-65px);
 	background-color: #eeeeee;
 }
 
@@ -729,7 +729,7 @@ h4 {
 }
 
 .footer-content {
-	width: 544px;
+	min-width: 544px;
 }
 
 .footer-content-title {
@@ -789,10 +789,11 @@ h4 {
 	min-height: 590px;
 	background-color: #ffffff;
 	position: fixed;
-	top: 10px;
+	top: 20px;
 	left: 15%;
 	padding: 70px 100px 70px 90px;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	z-index: 100;
 }
 
 .modal-close {
@@ -823,9 +824,16 @@ h4 {
 	outline: none;
 }
 
+.modal-close:hover::before,
+.modal-close:hover::after,
 .modal-close:focus::before,
 .modal-close:focus::after {
 	background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+	background-color: #ffeeee;
 }
 
 .modal-close::before {
@@ -996,6 +1004,10 @@ input[type="checkbox"] {
 	margin-bottom: 20px;
 }
 
+.filter-option:last-child {
+	margin-bottom: 15px;
+}
+
 .column-left-form-input + label:hover::before {
 	border-color: #4d4d4d;
 } 
@@ -1089,7 +1101,7 @@ input[type="checkbox"] {
 	line-height: 1.666;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .price-range-min-title,
@@ -1147,10 +1159,11 @@ input[type="checkbox"] {
 .sort-links {
 	width: 370px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
-.sort-links a:not(:last-child) {
-	margin-right: 20px;
+.sort-links a:not(:last-child):not(.triangle-down) {
+	margin-right: 25px;
 }
 
 .sort-title {
@@ -1167,6 +1180,7 @@ input[type="checkbox"] {
 
 .triangle-down {
 	margin-left: auto;
+	margin-right: 20px;
 }
 
 .sort-link {
@@ -1253,7 +1267,7 @@ input[type="checkbox"] {
 .catalog-item .item-content {
 	position: absolute;
 	left: 0;
-	bottom: 0px;	
+	bottom: -2px;	
 	width: 360px;
 	height: 231px;
 	text-align: center;
@@ -1430,7 +1444,7 @@ input[type="checkbox"] {
 
 .range-controls .toggle-min {
 	top: 31px;
-  	left: 50px;
+  	left: 20px;
 }
 
 .range-controls .toggle-max {
@@ -1451,9 +1465,9 @@ input[type="checkbox"] {
 }
 
 .price-controls input {
-  width: 65px;
+  width: 80px;
   padding: 8px 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
