@@ -866,40 +866,69 @@ h4 {
 }
 
 
-.left-form input[type="text"] {
+.left-form input[type="text"],
+.left-form input[type="email"] {
 	font-weight: 400;
 	line-height: 1.125;
 	text-transform: none;
-	color: rgba(68, 68, 68, 0.5);
 	border: 2px solid #d7dcde;
+	border-radius: 3px;
 	width: 360px;
 	padding: 15px;
+	color: #444444;
 }
 
 .left-form textarea {
 	font-weight: 400;
 	line-height: 1.125;
 	text-transform: none;
-	color: rgba(68, 68, 68, 0.5);
+	color: #444444;
 	border: 2px solid #d7dcde;
+	border-radius: 3px;
 	padding: 15px;
 	margin-bottom: 10px;
 }
 
 .left-form input[type="text"]:hover,
+.left-form input[type="email"]:hover,
 .left-form textarea:hover {
 	border: 2px solid #b4b9bb;
 }
 
 .left-form input[type="text"]:focus,
+.left-form input[type="email"]:focus,
 .left-form textarea:focus {
 	border: 2px solid #000000;
 	outline: none;
 }
 
 .left-form input[type="text"]:invalid,
+.left-form input[type="email"]:invalid,
 .left-form textarea:invalid {
 	border: 2px solid #e74246;
+	color: #e74246;
+}
+
+.left-form input[type="text"]::-webkit-input-placeholder,
+.left-form input[type="email"]::-webkit-input-placeholder,
+.left-form textarea::-webkit-input-placeholder {
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.left-form input[type="text"]:hover::-webkit-input-placeholder,
+.left-form input[type="email"]:hover::-webkit-input-placeholder, {
+	color: rgba(68, 68, 68, 0.5); 
+}
+
+.left-form input[type="text"]:focus::-webkit-input-placeholder,
+.left-form input[type="email"]:focus::-webkit-input-placeholder,
+.left-form textarea:focus::-webkit-input-placeholder {
+	color: #444444;
+}
+
+.left-form input[type="text"]:invalid::-webkit-input-placeholder,
+.left-form input[type="email"]:invalid::-webkit-input-placeholder,
+.left-form textarea:invalid::-webkit-input-placeholder {
 	color: #e74246;
 }
 
