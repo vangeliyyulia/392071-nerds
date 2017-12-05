@@ -199,7 +199,7 @@
 			<div class="left-form-wrapper">
 				<div class="left-form-item">
 					<label for="form-name">Ваше имя:</label>
-					<input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста" autofocus>
+					<input type="text" name="formName" id="form-name" placeholder="Представьтесь, пожалуйста" autofocus>
 				</div>
 				<div class="left-form-item">
 					<label for="form-email">Ваш e-mail:</label>
@@ -220,7 +220,7 @@
 		var popup = document.querySelector(".modal-form");
 		var close = popup.querySelector(".modal-close");
 
-		var name = popup.querySelector("[name=name]");
+		var formName = popup.querySelector("[name=formName]");
 		var email = popup.querySelector("[name=email]");
 		var messageBox = popup.querySelector("[name=messageBox]");
 		var form = popup.querySelector("form");
@@ -232,7 +232,7 @@
 			popup.classList.add("modal-show");
 			if (storage) {
 				email.value = storage;
-				name.focus();
+				formName.focus();
 			} else {
 				email.focus();
 			}
@@ -245,7 +245,7 @@
 		});
 
 		form.addEventListener("submit", function (evt) {
-			if (!name.value || !email.value || !messageBox.value) {
+			if (!formName.value || !email.value || !messageBox.value) {
 				evt.preventDefault();
 				popup.classList.remove("modal-error");
 				popup.offsetWidth = popup.offsetWidth;
