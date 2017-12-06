@@ -1206,11 +1206,11 @@ a {
 }
 
 .column-left-form fieldset:nth-child(1) {
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 }
 
 .column-left-form fieldset:nth-child(2) {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .column-left-form fieldset:nth-child(3) {
@@ -1375,7 +1375,7 @@ input[type="checkbox"] {
 
 .column-left-form-button {
   width: 100%;
-  padding: 17px 0;
+  padding: 17px 10px 17px 0;
   margin-left: 10px;
   background-color: #eeeeee;
   font-weight: 500;
@@ -1624,8 +1624,10 @@ input[type="checkbox"] {
 
 .pagination-item a {
   display: inline-block;
+  vertical-align: center;
   padding: 18px 20px;
   background-color: #eeeeee;
+  border-radius: 3px;
   font-weight: 500;
   line-height: 1.1;
   color: #000000;
@@ -1641,7 +1643,7 @@ input[type="checkbox"] {
 }
 
 .pagination-item-next a {
-  padding: 18px 80px;
+  padding: 18px 83px;
 }
 
 .pagination-item a:hover {
